@@ -1,0 +1,5 @@
+{
+  "name": "Executable Trust PoC",
+  "description": "A visual demonstration of FoundLab's Executable Trust Primitive, showcasing real-time risk analysis for Pix-to-Crypto transactions using a multi-module architecture on Google Cloud.",
+  "requestFramePermissions": []
+}
