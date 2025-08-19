@@ -2,11 +2,11 @@
   "name": "demo-poc-site",
   "version": "1.0.0",
   "private": true,
-"scripts": {
-  "dev": "esbuild index.tsx --bundle --outfile=dist/bundle.js --jsx=automatic --servedir=dist --watch",
-  "build": "esbuild index.tsx --bundle --outfile=dist/bundle.js --jsx=automatic --minify && copy index.html dist\\index.html",
-  "preview": "npx serve dist -l 4173"
-}
+  "scripts": {
+    "dev": "esbuild index.tsx --bundle --outfile=dist/bundle.js --jsx=automatic --servedir=dist --watch",
+    "build": "esbuild index.tsx --bundle --outfile=dist/bundle.js --jsx=automatic --minify && node -e \"require('fs').copyFileSync('index.html','dist/index.html')\"",
+    "preview": "npx serve dist -l 4173"
+  }
 ,
   "dependencies": {
     "react": "^18.2.0",
