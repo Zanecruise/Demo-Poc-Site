@@ -61,7 +61,7 @@ const App: React.FC = () => {
     if (step.scoreUpdate) {
         setReputationScore(step.scoreUpdate.from);
         setTimeout(() => {
-            setFinalScore(step.scoreUpdate.to);
+            setFinalScore(step.scoreUpdate?.to ?? null);
         }, 500);
     }
 

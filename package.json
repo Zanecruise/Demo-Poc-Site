@@ -4,16 +4,18 @@
   "private": true,
 "scripts": {
   "dev": "esbuild index.tsx --bundle --outfile=dist/bundle.js --jsx=automatic --servedir=dist --watch",
-  "build": "esbuild index.tsx --bundle --outfile=dist/bundle.js --jsx=automatic --minify && cp index.html dist/index.html",
+  "build": "esbuild index.tsx --bundle --outfile=dist/bundle.js --jsx=automatic --minify && copy index.html dist\\index.html",
   "preview": "npx serve dist -l 4173"
-},
-
+}
+,
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@types/react": "^19.1.10",
+    "@types/react-dom": "^19.1.7",
     "esbuild": "^0.21.0",
-    "typescript": "^5.0.0"
+    "typescript": "^5.9.2"
   }
 }
